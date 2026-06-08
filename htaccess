@@ -1,0 +1,40 @@
+# /.htaccess — raíz del proyecto
+# Configuración para que las peticiones AJAX no sean bloqueadas
+# por el WAF/anti-bot de hostings tipo InfinityFree.
+
+# Sesiones con vida larga (1 año) — refuerzo a nivel servidor
+<IfModule mod_php7.c>
+  php_value session.gc_maxlifetime 31536000
+  php_value session.cookie_lifetime 31536000
+</IfModule>
+<IfModule mod_php.c>
+  php_value session.gc_maxlifetime 31536000
+  php_value session.cookie_lifetime 31536000
+</IfModule>
+
+# Evitar caché agresivo en endpoints PHP (AJAX)
+<FilesMatch "\.(php)$">
+  <IfModule mod_headers.c>
+    Header set Cache-Control "no-store, no-cache, must-revalidate"
+    Header set Pragma "no-cache"
+  </IfModule>
+</FilesMatch>
+
+# Permitir que el AJAX del chat no se quede bloqueado por User-Agent vacío
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  # Si la petición es AJAX, dejarla pasar siempre
+  RewriteCond %{HTTP:X-Requested-With} ^XMLHttpRequest$ [NC]
+  RewriteRule ^ - [L]
+</IfModule>
+
+# Tipos MIME correctos
+AddType application/json .json
+AddType text/css         .css
+AddType application/javascript .js
+
+# Charset
+AddDefaultCharset utf-8
+
+# Evitar listado de directorios
+Options -Indexes
