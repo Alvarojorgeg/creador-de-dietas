@@ -1,32 +1,47 @@
 <div align="center">
 
-# 🥗 DIETISTA
+# 🥗 Proyecto de Dietista
 
 ### _Tu nutrición, organizada._
-
-**Aplicación web de seguimiento nutricional que conecta a clientes, dietistas y administradores alrededor de un mismo plan.**
 
 ![PHP](https://img.shields.io/badge/PHP-mysqli-777BB4?style=for-the-badge&logo=php&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL%20%2F%20MariaDB-BD-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JS-Vanilla-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Responsive](https://img.shields.io/badge/📱-Responsive-2F9E73?style=for-the-badge)
 ![Auth](https://img.shields.io/badge/Auth-bcrypt%20%2B%20CSRF-2F9E73?style=for-the-badge&logo=letsencrypt&logoColor=white)
 
 </div>
 
 ---
 
-## 📑 Índice
+## 👋 Hola, soy Álvaro
 
-1. [¿Qué es DIETISTA?](#-qué-es-dietista)
-2. [Primeros pasos · Instalación](#-primeros-pasos--instalación)
-3. [Los 3 roles del sistema](#-los-3-roles-del-sistema)
-4. [Estructura del proyecto](#-estructura-del-proyecto)
-5. [Esquema de la base de datos](#-esquema-de-la-base-de-datos)
-6. [Seguridad](#-seguridad)
+Este es **mi proyecto personal**: una aplicación web de seguimiento nutricional que he construido desde cero para conectar a **clientes**, **dietistas** y **administradores** alrededor de un mismo plan.
+
+Lo creé en parte para uso propio, y me ha servido para conseguir **objetivos reales**:
+
+> 💪 **Bajar 15 kilos**, reducir mi **porcentaje de grasa del 18% al 11%** y, en definitiva, **ser más saludable**.
+
+La idea era tener en un solo sitio la dieta, el progreso (peso, medidas, fotos), los objetivos y el contacto directo con el dietista. Y eso es justo lo que hace esta app. 🙌
+
+> [!NOTE]
+> 📱 **La aplicación está totalmente adaptada a móviles y tablets** (diseño _responsive_). Se ve y se usa igual de bien desde el ordenador que desde el teléfono.
 
 ---
 
-## 🌱 ¿Qué es DIETISTA?
+## 📑 Índice
+
+1. [¿Qué es?](#-qué-es)
+2. [Primeros pasos · Instalación](#-primeros-pasos--instalación)
+3. [Los 3 roles del sistema](#-los-3-roles-del-sistema)
+4. [Diseño responsive](#-diseño-responsive)
+5. [Estructura del proyecto](#-estructura-del-proyecto)
+6. [Esquema de la base de datos](#-esquema-de-la-base-de-datos)
+7. [Seguridad](#-seguridad)
+
+---
+
+## 🌱 ¿Qué es?
 
 Es una plataforma de **seguimiento nutricional** pensada para que un profesional y sus clientes trabajen juntos. Cada persona entra con su cuenta y, según su **rol**, ve unas herramientas u otras. Todo gira en torno a un núcleo común: la **dieta**, el **progreso** del cliente y la **comunicación** entre ambos.
 
@@ -123,6 +138,38 @@ Cuando alguien inicia sesión, la app mira su rol y le muestra un **menú y unas
 
 > 🔒 **Permisos:** <ins>solo ve y edita sus propios datos.</ins> No puede acceder a información de otros usuarios.
 
+#### 📸 Capturas · Cliente
+
+<p align="center">
+  <img src="NOCOPIAR/captura%20de%20inicio%20en%20cliente.png" width="540" alt="Inicio del cliente">
+  <br><em>🏠 Inicio del cliente con predicciones y calendario</em>
+</p>
+
+<p align="center">
+  <img src="NOCOPIAR/captura%20de%20mi%20dieta%20en%20cliente.png" width="540" alt="Mi dieta del cliente">
+  <br><em>🍽️ Mi dieta: comidas y macros del día</em>
+</p>
+
+<p align="center">
+  <img src="NOCOPIAR/captura%20de%20alternativas%20de%20alimentos%20en%20mi%20dieta%20de%20cliente.png" width="540" alt="Alternativas de alimentos">
+  <br><em>🔄 Alternativas de alimentos dentro de la dieta</em>
+</p>
+
+<p align="center">
+  <img src="NOCOPIAR/captura%20de%20lista%20de%20la%20compra%20en%20cliente.png" width="540" alt="Lista de la compra">
+  <br><em>🛒 Lista de la compra generada automáticamente</em>
+</p>
+
+<p align="center">
+  <img src="NOCOPIAR/captura%20de%20evolucion%20de%20peso%20en%20cliente.png" width="540" alt="Evolución de peso">
+  <br><em>📈 Evolución del peso del cliente</em>
+</p>
+
+<p align="center">
+  <img src="NOCOPIAR/captura%20de%20imprimir%20dieta%20cliente.png" width="540" alt="Imprimir dieta">
+  <br><em>🖨️ Vista de imprimir / PDF de la dieta</em>
+</p>
+
 </details>
 
 <details>
@@ -148,6 +195,38 @@ Cuando alguien inicia sesión, la app mira su rol y le muestra un **menú y unas
 
 > 🔒 **Permisos:** <ins>solo trabaja con los clientes que tiene **asignados**.</ins> No puede tocar clientes de otros dietistas.
 
+#### 📸 Capturas · Dietista
+
+<p align="center">
+  <img src="NOCOPIAR/captura%20de%20mis%20clientes%20en%20dietista.png" width="540" alt="Mis clientes">
+  <br><em>👥 Listado y fichas de los clientes</em>
+</p>
+
+<p align="center">
+  <img src="NOCOPIAR/captura%20de%20creador%20de%20dietas%20en%20dietista.png" width="540" alt="Creador de dietas">
+  <br><em>🍽️ Creador de dietas con bloques de comidas y macros</em>
+</p>
+
+<p align="center">
+  <img src="NOCOPIAR/captura%20de%20alimentos%20en%20dietista.png" width="540" alt="Alimentos">
+  <br><em>🥦 Gestión de alimentos del dietista</em>
+</p>
+
+<p align="center">
+  <img src="NOCOPIAR/captura%20de%20calendario%20de%20cliente%20en%20dietista.png" width="540" alt="Calendario de cliente">
+  <br><em>📆 Calendario: qué dieta toca cada día</em>
+</p>
+
+<p align="center">
+  <img src="NOCOPIAR/captura%20de%20notas%20en%20dietista.png" width="540" alt="Notas">
+  <br><em>📌 Notas privadas sobre el cliente</em>
+</p>
+
+<p align="center">
+  <img src="NOCOPIAR/captura%20de%20reporte%20hecho%20por%20el%20dietista.png" width="540" alt="Reporte del dietista">
+  <br><em>📄 Reporte de evolución generado por el dietista</em>
+</p>
+
 </details>
 
 <details>
@@ -168,7 +247,25 @@ Cuando alguien inicia sesión, la app mira su rol y le muestra un **menú y unas
 
 > 🔒 **Permisos:** <ins>acceso total.</ins> Es el **único rol** que puede dar de alta a dietistas y clientes y enlazarlos entre sí.
 
+#### 📸 Capturas · Administrador
+
+<p align="center">
+  <img src="NOCOPIAR/captura%20de%20inicio%20en%20administrador.png" width="540" alt="Inicio del administrador">
+  <br><em>🏠 Dashboard del administrador con los KPIs globales</em>
+</p>
+
 </details>
+
+---
+
+## 📱 Diseño responsive
+
+Toda la interfaz está **adaptada a móviles y tablets**: el menú se convierte en un cajón lateral, las tarjetas se reorganizan en una columna y los gráficos se ajustan al ancho de la pantalla. Puedes usar la app cómodamente desde el teléfono en el día a día.
+
+<p align="center">
+  <img src="NOCOPIAR/captura%20desde%20movil%20en%20inicio%20cliente.png" width="260" alt="Vista móvil del inicio del cliente">
+  <br><em>📱 Inicio del cliente visto desde el móvil</em>
+</p>
 
 ---
 
@@ -195,7 +292,7 @@ El proyecto está organizado **por roles**: cada uno tiene su carpeta en `/roles
 │   ├── 📁 dietista/       # Pantallas del dietista
 │   └── 📁 admin/          # Pantallas del administrador
 │
-├── 📁 css/  style.css     # Estilos (con tema claro/oscuro)
+├── 📁 css/  style.css     # Estilos (responsive, con tema claro/oscuro)
 ├── 📁 js/   sidebar.js    # Menú, notificaciones y cambio de tema
 ├── 📁 ajax/               # Endpoints para peticiones en segundo plano
 └── 📁 uploads/fotos/      # Fotos subidas por los clientes
@@ -248,9 +345,9 @@ El proyecto incluye varias **buenas prácticas de seguridad** de serie:
 
 <div align="center">
 
-### 🥗 DIETISTA
+### 🥗 Proyecto de Dietista
 
-_Tu nutrición, organizada._
+_Un proyecto personal de **Álvaro** · Tu nutrición, organizada._
 
 **⚠️ Recuerda cambiar la contraseña del `admin` tras el primer acceso.**
 
